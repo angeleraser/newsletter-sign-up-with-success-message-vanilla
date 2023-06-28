@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main id="app">
+      <section
+        id="newsletter-signup"
+        class="newsletter-signup-section section-card"
+      >
+        <div class="newsletter-signup-submit-data">
+          <header class="newsletter-signup-section-header">
+            <picture class="newsletter-signup-header-picture">
+              <source
+                srcset="./assets/images/illustration-sign-up-desktop.svg"
+                media="(min-width: 1140px)"
+              />
+              <img
+                src="./assets/images/illustration-sign-up-mobile.svg"
+                alt="Notes and information data"
+              />
+            </picture>
+          </header>
+          <main class="newsletter-signup-section-main">
+            <h1 class="newsletter-signup-section-title">Stay updated!</h1>
+            <p class="newsletter-signup-section-description">
+              Join 60,000+ products managers receiving monthlty updates on:
+            </p>
+            <ul class="newsletter-signup-checklist">
+              <li class="newsletter-signup-checklist-item">
+                <img
+                  class="newsletter-signup-checklist-icon"
+                  src="./assets/images/icon-list.svg"
+                  alt="Success icon"
+                />
+                <span>Products discovery and building what matters</span>
+              </li>
+
+              <li class="newsletter-signup-checklist-item">
+                <img
+                  class="newsletter-signup-checklist-icon"
+                  src="./assets/images/icon-list.svg"
+                  alt="Success icon"
+                />
+                <span>Measuring to ensure updates are success</span>
+              </li>
+
+              <li class="newsletter-signup-checklist-item">
+                <img
+                  class="newsletter-signup-checklist-icon"
+                  src="./assets/images/icon-list.svg"
+                  alt="Success icon"
+                />
+                <span>And much more!</span>
+              </li>
+            </ul>
+
+            <form id="newsletter-signup-form" class="newsletter-signup-form">
+              <label class="newsletter-signup-field">
+                <input
+                  id="newsletter-signup-input"
+                  type="email"
+                  placeholder="email@company.com"
+                  class="newsletter-signup-field-input"
+                />
+                <div class="newsletter-signup-field-header">
+                  <h2>Email address</h2>
+                  <p class="newsletter-signup-field-error-message">
+                    Valid email required
+                  </p>
+                </div>
+              </label>
+
+              <button class="button" type="submit">
+                Suscribe to monthlty newsletter
+              </button>
+            </form>
+          </main>
+        </div>
+      </section>
+
+      <section
+        id="newsletter-success"
+        style="display: none"
+        class="newsletter-signup-success-card section-card"
+      >
+        <div class="newsletter-signup-success">
+          <img
+            class="newsletter-signup-success-icon"
+            src="./assets/images/icon-success.svg"
+            alt="Success check"
+          />
+
+          <h1 class="newsletter-signup-section-title">
+            Thanks for subscribing!
+          </h1>
+          <p
+            id="newsletter-success-message"
+            class="newsletter-signup-section-description"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <span class="email">Nesciunt reprehenderit</span>, nemo quaerat quod
+          </p>
+
+          <button
+            id="newsletter-success-dismiss-btn"
+            class="button newsletter-signup-success-dismiss-btn"
+            type="button"
+          >
+            Dismiss message
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+.section-card {
+  background-color: var(--white);
+  font-family: var(--font-roboto);
+  min-height: 100vh;
+  color: var(--secondary-main);
+  width: 100%;
+  font-size: 16px;
+}
+
+.newsletter-signup-submit-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter-signup-header-picture {
+  display: inline-block;
+  width: 100%;
+}
+
+.newsletter-signup-header-picture img {
+  width: 100%;
+}
+
+.newsletter-signup-section-header {
+  margin-bottom: 20px;
+}
+
+.newsletter-signup-section-main {
+  padding: 28px 24px;
+}
+
+.newsletter-signup-section-title {
+  font-size: 2em;
+  font-weight: var(--fw-700);
+}
+
+.newsletter-signup-section-description {
+  margin: 24px 0;
+}
+
+.newsletter-signup-section-description,
+.newsletter-signup-checklist-item {
+  line-height: 1.4;
+}
+
+.newsletter-signup-checklist {
+  margin-bottom: 48px;
+}
+
+.newsletter-signup-checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.newsletter-signup-checklist-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.newsletter-signup-field {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.newsletter-signup-field-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: var(--fw-700);
+  color: var(--secondary-main);
+}
+
+.newsletter-signup-field-error-message {
+  color: var(--error);
+  display: none;
+}
+
+.newsletter-signup-field-input {
+  border-radius: 8px;
+  border: none;
+  color: var(--secondary-main);
+  margin: 12px 0 24px 0;
+  outline: 1px solid var(--grey);
+  padding: 20px 24px;
+  width: 100%;
+  transition: backround-color, outline-color, 0.3s;
+}
+
+.newsletter-signup-field-input,
+.newsletter-signup-field-input::placeholder {
+  font-family: var(--font-roboto);
+  font-weight: var(--fw-700);
+}
+
+.newsletter-signup-field-input::placeholder {
+  color: var(--grey);
+}
+
+.newsletter-signup-field-input:hover {
+  outline-color: var(--secondary-main);
+}
+
+.newsletter-signup-field-input:invalid {
+  background-color: var(--error-light);
+  outline-color: var(--error);
+  color: var(--error);
+}
+
+.newsletter-signup-field-input:invalid
+  + .newsletter-signup-field-header
+  .newsletter-signup-field-error-message {
+  display: inline-block;
+}
+
+.newsletter-signup-success-card {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-signup-success {
+  flex: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+  max-width: 375px;
+}
+
+.newsletter-signup-success-icon {
+  max-width: 64px;
+}
+
+.newsletter-signup-success-card .newsletter-signup-section-title {
+  margin: 36px 0;
+}
+
+.newsletter-signup-success-card .newsletter-signup-section-description {
+  margin: 0;
+}
+
+.newsletter-signup-success-card .newsletter-signup-section-description .email {
+  font-weight: var(--fw-700);
+}
+
+.newsletter-signup-success-dismiss-btn {
+  margin-top: auto;
+}
+
+@media (min-width: 460px) {
+  .newsletter-signup-header-picture img {
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 24px 24px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .newsletter-signup-submit-data {
+    flex-direction: row-reverse;
+    gap: 60px;
+  }
+
+  .section-card {
+    border-radius: 28px;
+    min-height: auto;
+  }
+
+  .newsletter-signup-section {
+    padding: 22px 14px;
+    max-width: 900px;
+  }
+
+  .newsletter-signup-section-header {
+    margin-bottom: 0;
+  }
+
+  .newsletter-signup-section-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    max-width: 375px;
+  }
+
+  .newsletter-signup-section-title {
+    font-size: 3.5em;
+    font-weight: var(--fw-700);
+  }
+
+  .newsletter-signup-header-picture img {
+    max-height: 100%;
+    object-fit: initial;
+    border-radius: 0;
+  }
+
+  .newsletter-signup-checklist {
+    margin-bottom: 24px;
+  }
+
+  .newsletter-signup-success-card {
+    max-width: 512px;
+    padding: 46px 64px 60px;
+  }
+
+  .newsletter-signup-success {
+    padding-top: 0;
+  }
+
+  .newsletter-signup-success-dismiss-btn {
+    margin-top: 42px;
+  }
+}

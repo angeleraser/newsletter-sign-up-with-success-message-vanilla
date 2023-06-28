@@ -1,0 +1,25 @@
+@import url("./reset.min.css");
+@import url("./variables.css");
+@import url("./button.css");
+@import url("./newsletter-signup-section.css");
+
+html,
+body {
+  width: 100%;
+  background-color: var(--secondary-dark);
+  height: 100%;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+}
+
+@media (min-width: 1140px) {
+  #app {
+    padding: 20px;
+  }
+}

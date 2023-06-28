@@ -1,0 +1,15 @@
+:root {
+  --primary: hsl(4, 100%, 67%);
+  --secondary-main: hsl(234, 29%, 20%);
+  --secondary-dark: hsl(235, 18%, 26%);
+  --success: #4caf50;
+  --error: #FF5379;
+  --error-light: #FFE8E6;
+
+  --grey: hsl(231, 7%, 60%);
+  --white: #fff;
+
+  --font-roboto: "Roboto", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
